@@ -1,0 +1,269 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.row::before,
+.row::after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.half,
+#js-adding-bookmark-form {
+    width: 100%;
+}
+
+/* Styling */
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-size: 30pt;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 10px;
+    margin: 0px 50px 150px 50px;
+    color: rgb(41, 41, 41);
+    /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+}
+
+.column {
+    border: 1px solid #666;
+    background: #343436;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: rgb(61, 61, 61);
+    margin: 100px 0px 50px 10px;
+    padding: 75px 0px;
+    padding-top: 115px;
+    text-align: left;
+    font-size: 62pt;
+    font-weight: bolder;
+}
+
+button {
+    border: 2px solid rgb(114, 114, 114);
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:focus {
+    outline:0;
+}
+
+.css-add-button {
+    font-size: 60pt;
+    font-weight: 300;
+    background-color: rgb(255, 255, 255);
+    color: rgb(146, 146, 146);
+    padding: 0px 4px 90px 4px;
+    width: 92px;
+    height: 80px;
+    display: inline-block;
+    float: left;
+    border-radius: 50%;
+}
+
+.css-filter-button {
+    font-size: 60pt;
+    font-weight: 300;
+    background-color: rgb(255, 255, 255);
+    color: rgb(146, 146, 146);
+    padding: 0px 4px 90px 4px;
+    width: 92px;
+    height: 80px;
+    display: inline-block;
+    float: left;
+    border-radius: 50%;
+}
+
+.rate{
+    font-size: 30pt;
+    font-weight: 300;
+    height: 90px;
+    width: 90px;
+    padding-left: 25px;
+    color: rgb(95, 95, 95);
+    display: inline-block;
+    float: right;
+    border: 2px solid rgb(114, 114, 114);
+}
+
+#js-adding-bookmark-form{
+    font-size: 40pt;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#js-adding-bookmark-form input{
+    border-right: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(214, 214, 214);
+    border-bottom: 2px solid rgb(214, 214, 214);
+    margin-bottom: 70px;
+}
+
+.adding-form-container {
+    margin-bottom: 80px;
+}
+
+.default-bookmark {
+    font-weight: lighter;
+    border-top: 2px solid rgb(175, 175, 175);
+    border-bottom: 2px solid rgb(175, 175, 175);
+    border-radius: 3px;
+    height: 160px;
+    display: block;
+    clear: both;
+    margin-top: 5%;
+    padding-top: 36px;
+    padding-right: 7px;
+    background-color: rgb(255, 255, 255)
+}
+
+.expanded-bookmark {
+    display: block;
+    word-wrap: break-word;
+    clear: both;
+    color: black;
+}
+
+p {
+    padding-left: 15px;
+    color: rgb(153, 153, 153);
+    font-size: 30pt;
+    font-weight: 300;
+}
+
+.extended-buttons {
+    margin-top: 105px;
+}
+
+#star {
+    font-size: 36pt;
+    font-weight: 300;
+    color: rgb(95, 95, 95);
+}
+
+.rating {
+    float: right;
+    position: relative;
+    top: 8px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-weight: 400;
+    color: rgb(95, 95, 95);
+    display: inline-block;
+    padding-left: 15px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.beginButtons {
+    margin-bottom: 15%;
+}
+
+
+/*.item-container {
+    padding-top: 5%;
+}*/
+
+.js-bookmark-title-entry {
+    font-weight: 300;
+    display: block;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.js-bookmark-url-entry {
+    display: block;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.js-bookmark-desc-entry {
+    display: block;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.css-adding-form-buttons {
+    background-color: white;
+    border: 0px;
+    border-radius: 5%;
+    width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: 2%;
+}
+
+.add {
+    color: rgb(87, 187, 233);
+}
+
+.cancel {
+    color: rgb(136, 82, 82);
+}
+
+.add,
+.cancel {
+    font-style: normal;
+}
+
+.rating-label {
+    color: rgb(109, 109, 109);
+    font-style: normal;
+}
+
+input[type="radio"] {
+    border: 0px;
+    width: .75em;
+    height: .75em;
+}
+
+.block {
+    font-style: normal;
+    margin: 7px;
+    color: rgb(133, 133, 133);
+}
+
+.banner {
+    color: red;
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+}
+
+.visit-site-button,
+.delete-button {
+    background-color: white;
+    border: 0;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.visit-site-button {
+    color: rgb(87, 187, 233);
+}
+
+.delete-button {
+    color: rgb(245, 140, 91);
+    float: right;
+}
