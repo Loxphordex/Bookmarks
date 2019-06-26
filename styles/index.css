@@ -27,12 +27,15 @@ html {
 /* Styling */
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-image: url('../images/nature3.jpg');
+    background-size: 300%;
+    background-repeat: no-repeat;
+    background-position-x: right;
     font-size: 30pt;
     font-family: 'Montserrat', sans-serif;
     padding: 0 10px;
     margin: 0px 50px 150px 50px;
-    color: rgb(41, 41, 41);
+    color: rgb(14, 14, 14);
     /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
 
@@ -44,17 +47,19 @@ body {
 }
 
 h1 {
-    color: rgb(61, 61, 61);
+    color: rgb(20, 26, 19);
     margin: 100px 0px 50px 10px;
     padding: 75px 0px;
     padding-top: 115px;
     text-align: left;
     font-size: 62pt;
     font-weight: bolder;
+    opacity: 0.8;
 }
 
 button {
-    border: 2px solid rgb(114, 114, 114);
+    border: 2px solid rgb(43, 43, 43);
+    background-color: transparent;
     border-radius: 5px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -67,14 +72,17 @@ button:focus {
 .css-add-button {
     font-size: 60pt;
     font-weight: 300;
-    background-color: rgb(255, 255, 255);
-    color: rgb(146, 146, 146);
+    background-color: transparent;
+    color: rgb(43, 43, 43);
     padding: 0px 4px 90px 4px;
     width: 92px;
     height: 80px;
     display: inline-block;
     float: left;
     border-radius: 50%;
+    border: 2px solid rgb(43, 43, 43);
+    opacity: 0.5;
+
 }
 
 .css-filter-button {
@@ -100,20 +108,25 @@ button:focus {
     display: inline-block;
     float: right;
     border: 2px solid rgb(114, 114, 114);
+    background-color: transparent;
 }
 
 #js-adding-bookmark-form{
     font-size: 40pt;
     font-weight: 300;
     font-style: italic;
+    /* background-color: rgba(55, 58, 55, 0.212); */
 }
 
 #js-adding-bookmark-form input{
-    border-right: 2px solid rgb(255, 255, 255);
-    border-left: 2px solid rgb(255, 255, 255);
-    border-top: 2px solid rgb(214, 214, 214);
-    border-bottom: 2px solid rgb(214, 214, 214);
-    margin-bottom: 70px;
+    border-right: none;
+    border-left: none;
+    border-top: 2px solid rgb(43, 43, 43);
+    border-bottom: 2px solid rgb(43, 43, 43);
+    margin-bottom: 27px;
+    background-color: rgba(248, 252, 248, 0.534);
+    color: rgb(14, 14, 14);
+    font-weight: 500;
 }
 
 .adding-form-container {
@@ -131,7 +144,8 @@ button:focus {
     margin-top: 5%;
     padding-top: 36px;
     padding-right: 7px;
-    background-color: rgb(255, 255, 255)
+    background-color: rgba(248, 252, 248, 0.534);
+    color: rgb(14, 14, 14);
 }
 
 .expanded-bookmark {
@@ -155,7 +169,7 @@ p {
 #star {
     font-size: 36pt;
     font-weight: 300;
-    color: rgb(95, 95, 95);
+    color: rgb(14, 14, 14);
 }
 
 .rating {
@@ -167,7 +181,7 @@ p {
 
 h2 {
     font-weight: 400;
-    color: rgb(95, 95, 95);
+    color: rgb(14, 14, 14);
     display: inline-block;
     padding-left: 15px;
     margin-top: 1%;
@@ -203,7 +217,7 @@ h2 {
 }
 
 .css-adding-form-buttons {
-    background-color: white;
+    background-color: transparent;
     border: 0px;
     border-radius: 5%;
     width: 400px;
@@ -213,21 +227,16 @@ h2 {
     margin-top: 2%;
 }
 
-.add {
-    color: rgb(87, 187, 233);
-}
-
-.cancel {
-    color: rgb(136, 82, 82);
-}
-
 .add,
 .cancel {
     font-style: normal;
+    color: rgb(14, 14, 14);
+    background-color: rgba(248, 252, 248, 0.534);
+    font-weight: 500;
 }
 
 .rating-label {
-    color: rgb(109, 109, 109);
+    color: rgb(14, 14, 14);
     font-style: normal;
 }
 
@@ -240,7 +249,7 @@ input[type="radio"] {
 .block {
     font-style: normal;
     margin: 7px;
-    color: rgb(133, 133, 133);
+    color: rgb(14, 14, 14);
 }
 
 .banner {
